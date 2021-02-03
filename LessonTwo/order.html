@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style>
+        body {
+            background-image: url("hi-tech-futuristic-hud-display-circle-elements.jpg");
+            background-color: #cccccc;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the link color on hover */
+        li a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        .active {
+            background-color: #2359a0;
+            color: white;
+        }
+
+        a {
+            color:white;
+        }
+
+        label {
+            color:white;
+        }
+
+        h2 {
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a class="active" href="order.html">Order</a></li>
+    </ul> 
+
+    <h2>Select Game(s) to Purchase</h2>
+    <form>
+        <input type="checkbox" id="mario1">
+        <label for="mario1">Super Mario Bros.</label>
+        <br>
+        <input type="checkbox" id="mario2">
+        <label for="mario1">Super Mario Bros. 2</label>
+        <br>
+        <input type="checkbox" id="mario3">
+        <label for="mario1">Super Mario Bros. 3</label>
+        <br>
+        <input type="checkbox" id="duckhunt">
+        <label for="mario1">Duck Hunt</label>
+        <br>
+        <label for="name">First and Last Name</label>
+        <input type="text" id="name">
+        <br>
+        <label for="address">Full Shipping Address</label>
+        <input type="text" id="address">
+        <br>
+        <label for="credit">Credit Card Number</label>
+        <input type="text" id="credit">
+        <br>
+        <label for="priority">Use Priority Shipping</label>
+        <input type="checkbox" id="priority">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <a href="https://www.freepik.com/photos/background">Background photo created by natanaelginting - www.freepik.com</a>
+</body>
+</html>
