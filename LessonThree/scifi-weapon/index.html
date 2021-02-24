@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Science Fiction Weapon Creator</title>
+
+<style>
+    h1
+    {
+    color: DarkRed;
+    }
+
+    .centered
+    {
+    text-align: center;
+    }
+
+    .background
+    {
+    background-color: lightslategray;
+    }
+
+    .weaponoverlap
+    {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    }
+
+    .weaponcontainer
+    {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border: solid gray 4px;
+    }
+
+    .buttongrid
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .roundsbuttons
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .barrelbuttons
+    {
+        display: flex;
+        flex-direction: row;
+    }
+</style>
+</head>
+
+<body>
+    <h1 class="centered">Science Fiction Weapon Designer 1.0</h1>
+
+    <div class="background">
+        <p>
+        This is a science fiction weapon designer page.
+        </p>
+
+        <div class="weaponcontainer">
+        <img class="weaponoverlap" src="base.png">
+        <img class="weaponoverlap" id="rounds" src="fire-rounds.png">
+        <img class="weaponoverlap" id="barrel" src="long-barrel.png">
+        </div>
+
+        <p id="barrelbonus">The long barrel grants you additional range.</p>
+        <p id="roundsbonus">The fire rounds grant you bonus fire damage.</p>
+    </div>
+    <div class="buttongrid">
+        <span class="roundsbuttons">
+            <button onclick=FireRounds()>Fire Rounds</button>
+            <button onclick=IceRounds()>Ice Rounds</button>
+            <button onclick=AcidRounds()>Acid Rounds</button>
+        </span>
+        <span class="barrelbuttons">
+            <button onclick=LongBarrel()>Long Barrel</button>
+            <button onclick=WideBarrel()>Wide Barrel</button>
+            <button onclick=DoubleBarrel()>Double Barrel</button>
+        </span>
+    </div>
+</body>
+<script>
+
+    var clickSound = new Audio("shortcircuit.mp3");
+    
+    function FireRounds()
+    {
+        document.getElementById("rounds").src="fire-rounds.png";
+        document.getElementById("rounds").alt="An orange weapon magazine";
+        document.getElementById("roundsbonus").textContent="The fire rounds grant you bonus fire damage."
+        clickSound.play();
+    }
+    
+    function IceRounds()
+    {
+        document.getElementById("rounds").src="ice-rounds.png";
+        document.getElementById("rounds").alt="A blue weapon magazine";
+        document.getElementById("roundsbonus").textContent="The ice rounds have a chance to freeze your target."
+        clickSound.play();
+    }
+    
+    function AcidRounds()
+    {
+        document.getElementById("rounds").src="acid-rounds.png";
+        document.getElementById("rounds").alt="A bright green weapon magazine";
+        document.getElementById("roundsbonus").textContent="The acid rounds lower your target's defenses."
+        clickSound.play();
+    }
+    
+    function LongBarrel()
+    {
+        document.getElementById("barrel").src="long-barrel.png";
+        document.getElementById("barrel").alt="A long gray weapon barrel";
+        document.getElementById("barrelbonus").textContent="The long barrel grants you additional range."
+        clickSound.play();
+    }
+
+    function WideBarrel()
+    {
+        document.getElementById("barrel").src="wide-barrel.png";
+        document.getElementById("barrel").alt="A wide gray weapon barrel";
+        document.getElementById("barrelbonus").textContent="The wide barrel spreads out the shots to multiple targets."
+        clickSound.play();
+    }
+
+    function DoubleBarrel()
+    {
+        document.getElementById("barrel").src="double-barrel.png";
+        document.getElementById("barrel").alt="A two-tiered gray weapon barrel";
+        document.getElementById("barrelbonus").textContent="The double barrel grants you additional damage."
+        clickSound.play();
+    }
+    
+    </script>
+</html>
