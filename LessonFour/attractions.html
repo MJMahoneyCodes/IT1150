@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Attractions</title>
+    <!--Used responsive top nav from here: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--Linking all my pages to this CSS file so I can have the responsive top nav styling and grid view on each page-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Linking all my pages to this JavaScript file so I can have the responsive top nav styling on each page-->
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="statistics.html">Statistics</a>
+        <a href="attractions.html" class="active">Attractions</a>
+        <a href="history.html">History</a>
+        <a href="map.html">Map</a>
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <section class="row">
+        <aside class="col-3">
+            <h2 class="asideHeading">Mega City Twelve General Info</h2>
+            <figure>
+                <img src="MegaCity12Logo.png" alt="Mega City 12 Shield Logo">
+            </figure>
+            <h2 class="asideContent">For help, please dial</h2>
+            <h2 class="asideContent">Police: 88888</h2>
+            <h2 class="asideContent">Fire: 99999</h2>
+            <h2 class="asideContent">Killer Robots: 00000</h2>
+        </aside>
+        <main class="col-4">
+            <h2 class="mainHeading">
+                Robot-run Human Schooling
+            </h2>
+            <p>
+                The robot-run and administered human schools prepare humans for a lifetime of civil servitude in one of three job areas. 
+                Humans can be volcano fuel, street sweepers, or robot oilers. 
+            </p>
+            <h2 class="mainHeading">
+                Cloud District
+            </h2>
+            <p>
+                All of the data in Mega City 12 is stored in the cloud district. This is a bunch of servers taped to the ceiling of a warehouse.
+            </p>
+        </main>
+        <main class="col-5">
+            <h2 class="mainHeading">
+                Legally Mandated Park
+            </h2>
+            <p>
+                We are required to have a park in the city, per country ordinance ID10T. 
+            </p>
+            <h2 class="mainHeading">
+                Feces-free Human Dwellings
+            </h2>
+            <p>
+                Thanks to the hard work of our sanitation engineers, we are now a member of the Feces-Free Human Dwelling Association! 5 years running!
+            </p>
+        </main>
+    </section>
+</body>
+</html>

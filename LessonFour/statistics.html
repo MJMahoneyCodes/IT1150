@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>City Statistics</title>
+    <!--Used responsive top nav from here: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--Linking all my pages to this CSS file so I can have the responsive top nav and grid view styling on each page-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Linking all my pages to this JavaScript file so I can have the responsive top nav styling on each page-->
+    <script type="text/javascript" src="scripts.js"></script> 
+</head>
+<body>
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="statistics.html" class="active">Statistics</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="history.html">History</a>
+        <a href="map.html">Map</a>
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <section class="row">
+        <aside class="col-3">
+            <h2 class="asideHeading">Mega City Twelve General Info</h2>
+            <figure>
+                <img src="MegaCity12Logo.png" alt="Mega City 12 Shield Logo">
+            </figure>
+            <h2 class="asideContent">For help, please dial</h2>
+            <h2 class="asideContent">Police: 88888</h2>
+            <h2 class="asideContent">Fire: 99999</h2>
+            <h2 class="asideContent">Killer Robots: 00000</h2>
+        </aside>
+        <main class="col-9">
+            <h2 class="mainHeading">Ostroske City Rating Scale - 12 Points</h2>
+            <p>
+                The cost of living in Mega City 12 is "Moderate", which adds 2 points on the OCRS. 
+                You can rent a small apartment for approximately $3,500 cyber credits a month.
+            </p>
+            <p>
+                The crime rating in the city is "Very High". This adds 0 points on the OCRS. 
+                The good news is that our security forces are very active!
+            </p>
+            <p>
+                The availability of entertainment is "Decent". This adds 2 points on the OCRS. 
+                It is reasonably easy, and safe, to attend a show or a concert!
+            </p>
+            <p>
+                The pollution in the city is "Heavy/Smog". This adds 0 points to the OCRS.
+                This allows our sanitation and waste departments to function at a high capacity, saving the taxpayers money!
+            </p>
+            <p>
+                The general scenery and architectural layout is "Modern Drab". This adds 1 point on the OCRS. 
+                No wasted money on maintaining a luxury look for MC12!
+            </p>
+            <p>
+                The taxes in Mega City 12 go towards funding our security and sanitation services. They are rated as "Above Average",
+                 which adds 1 point on the Ostroske City Rating Scale.
+            </p>
+            <p>
+                You will find easy transporation and walking to any of the city's hospital or detention centers. This adds 3 points to the OCRS.
+            </p>
+            <p>
+                Situated at the base of an active volcano, Mega City 12 is always "warm". This adds 3 points to the OCRS, but your heating bills have never
+                 been lower!
+            </p>
+        </main>
+    </section>
+</body>
+</html>

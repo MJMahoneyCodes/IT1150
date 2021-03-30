@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Megacity Twelve</title>
+    <!--Used responsive top nav from here: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--Linking all my pages to this CSS file so I can have the responsive top nav styling and grid view on each page-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Linking all my pages to this JavaScript file so I can have the responsive top nav styling on each page-->
+    <script type="text/javascript" src="scripts.js"></script> 
+</head>
+<body>
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="statistics.html">Statistics</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="history.html">History</a>
+        <a href="map.html">Map</a>
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <section class="row">
+        <aside class="col-3">
+            <h2 class="asideHeading">Mega City Twelve General Info</h2>
+            <figure>
+                <img src="MegaCity12Logo.png" alt="Mega City 12 Shield Logo">
+            </figure>
+            <h2 class="asideContent">For help, please dial</h2>
+            <h2 class="asideContent">Police: 88888</h2>
+            <h2 class="asideContent">Fire: 99999</h2>
+            <h2 class="asideContent">Killer Robots: 00000</h2>
+        </aside>
+        <main class="col-9">
+            <h2 class="mainHeading">
+                Welcome to the glorious city of Mega City Twelve!
+            </h2>
+            <h2>
+                The Twelve Rules of Mega City Twelve Are As Follows
+            </h2>
+            <ol>
+                <li>Do not, under any circumstances, look a robot in the eyes</li>
+                <li>Humans are not allowed out of their dwellings after dark</li>
+                <li>If you visit the volcano, you must take one piece of litter back with you</li>
+                <li>You can never question the supreme overlord, Mount Vulcan</li>
+                <li>Please be kind and rewind</li>
+                <li>The only acceptable ice cream toppings are nuts and bolts, motor oil, and sprinkles</li>
+                <li>If you move to the city, you can never leave, for any reason, ever</li>
+                <li>Do not feed the robots after midnight</li>
+                <li>All innovation must be properly planned and accounted for</li>
+                <li>Please schedule your sick time 365 days in advance</li>
+                <li>Babies must learn to talk by the age of 2 or they will visit Mount Vulcan</li>
+                <li>Please follow all rules and regulations, and remember, fun is mandatory!</li>
+            </ol>
+        </main>
+    </section>
+</body>
+</html>

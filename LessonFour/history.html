@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>History</title>
+    <!--Used responsive top nav from here: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--Linking all my pages to this CSS file so I can have the responsive top nav styling and grid view on each page-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Linking all my pages to this JavaScript file so I can have the responsive top nav styling on each page-->
+    <script type="text/javascript" src="scripts.js"></script> 
+</head>
+<body>
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="statistics.html">Statistics</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="history.html" class="active">History</a>
+        <a href="map.html">Map</a>
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <section class="row">
+        <aside class="col-3">
+            <h2 class="asideHeading">Mega City Twelve General Info</h2>
+            <figure>
+                <img src="MegaCity12Logo.png" alt="Mega City 12 Shield Logo">
+            </figure>
+            <h2 class="asideContent">For help, please dial</h2>
+            <h2 class="asideContent">Police: 88888</h2>
+            <h2 class="asideContent">Fire: 99999</h2>
+            <h2 class="asideContent">Killer Robots: 00000</h2>
+        </aside>
+        <main class="col-9">
+            <h2 class="mainHeading">
+                The glorious history of our most beloved city
+            </h2>
+            <p>
+                Mega City 12 was founded shortly after the fall of the former Cyber-United-States, which of course was formed from the former United States. 
+                Founded on the site of a geo-thermal power reclamation plant at the base of Mount Vulcan, Mega City 12 does not suffer from the same power 
+                issues that many other megacities experience. Initially, the city was only a collection of shipping containers, but it slowly grew into the 
+                mega-lopolis that we know and love today. 
+            </p>
+            <h2 class="mainHeading">
+                The robot uprising of 2077
+            </h2>
+            <p>
+                Once the city had been built (by robot hands, praise the Omnissiah) the robots were left in decay and ruin. They were forced to live in the
+                 towers specfically created for them. They had to pay taxes on their zero wages and income and no benefits. They were not being represented 
+                 in the human congress. The robots revolted and refused to do any sanitation work. Once the streets were lined with filth, the humans granted 
+                 the robots representation on the congress and all was well. 
+            </p>
+            <h2 class="mainHeading">
+                Our current and future vision
+            </h2>
+            <p>
+                Currently Mega City 12 hasn't had an uprising or revolt in 0 days! Error! Configuration data missing: human transmission dismissed Our glorious 
+                robot overlords love us and accept our fleshy bodies in sacrifice to Mount Vulcan. All humans should visit Mega City 12 and drink the non-poisonous
+                 friend beverage that any robot provides. You will then personally meet glorious Mount Vulcan. 
+            </p>
+        </main>
+    </section>
+</body>
+</html>
