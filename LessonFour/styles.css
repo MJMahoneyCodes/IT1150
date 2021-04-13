@@ -69,6 +69,14 @@ main {
   max-height: 150px;
 }
 
+.sidePicture {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 /* Using Google Font */
 nav, .asideHeading, .asideContent, .mainHeading {
   margin: 0;
