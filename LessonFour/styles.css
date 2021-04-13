@@ -56,7 +56,6 @@ main {
   display: flex;
   flex-flow: row wrap;
   text-align: left;
-  /* font-size: 1vw; */
   font-family: Arial, Helvetica, sans-serif;
 }
 
