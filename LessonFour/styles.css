@@ -44,6 +44,7 @@ img {
 aside {
   border-style: solid;
   text-align: center;
+  height: min-content;
 }
 
 .row {
