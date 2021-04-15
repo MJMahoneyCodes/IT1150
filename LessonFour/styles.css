@@ -138,9 +138,21 @@ nav, .asideHeading, .asideContent, .mainHeading {
   main {
     font-size: 3vw;
   }
-
   aside {
-    font-size: 2vw;
+    font-size: 3vw;
   }
+  /* resizing all columns to be 100% on small screens */
+.col-1 {width: 100%;}
+.col-2 {width: 100%;}
+.col-3 {width: 100%;}
+.col-4 {width: 100%;}
+.col-5 {width: 100%;}
+.col-6 {width: 100%;}
+.col-7 {width: 100%;}
+.col-8 {width: 100%;}
+.col-9 {width: 100%;}
+.col-10 {width: 100%;}
+.col-11 {width: 100%;}
+.col-12 {width: 100%;}
 }
 /* End of topnav styling*/
