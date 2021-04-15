@@ -82,6 +82,11 @@ nav, .asideHeading, .asideContent, .mainHeading {
   margin: 0;
   font-family: 'Chango', cursive;
   }
+
+@media screen and (min-width: 600px) {
+
+}
+
   
 /* All the .topnav are used from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 .topnav {
@@ -119,9 +124,6 @@ nav, .asideHeading, .asideContent, .mainHeading {
     float: right;
     display: block;
   }
-  }
-  
-@media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -133,5 +135,12 @@ nav, .asideHeading, .asideContent, .mainHeading {
     display: block;
     text-align: left;
   }
+  main {
+    font-size: 3vw;
   }
+
+  aside {
+    font-size: 2vw;
+  }
+}
 /* End of topnav styling*/
