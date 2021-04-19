@@ -5,9 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Important Internet Organizations</title>
 </head>
 <body>
-    
+    <p id="IETF">Internet Engineering Task Force</p>
+    <p id="ICANN">Internet Corporation for Assigned Names and Numbers</p>
+    <p id="WWWC">World Wide Web Consortium</p>
+    <p class="IETF">This line is for IETF</p>
+    <p class="ICANN">This line is for ICANN</p>
+    <p class="WWWC">This line is for WWWC</p>
+    <script>
+        //makes sure that scripts don't start running
+        //until the page has fully loaded
+        $(document).ready(function(){
+            //starts off by hiding ICANN and WWWC class' elements
+            $(".ICANN").hide();
+            $(".WWWC").hide();
+            //clicking on the element with id=IETF shows IETF class' elements and hides the others'
+            $("#IETF").click(function(){
+                $(".IETF").show();
+                $(".ICANN").hide();
+                $(".WWWC").hide();
+            });
+            //clicking on the element with id=ICANN shows ICANN class' elements and hides the others'
+            $("#ICANN").click(function(){
+                $(".ICANN").show();
+                $(".IETF").hide();
+                $(".WWWC").hide();
+            });
+            //clicking on the element with id=WWWC shows the WWWC class' elements and hides the others'
+            $("#WWWC").click(function(){
+                $(".WWWC").show();
+                $(".IETF").hide();
+                $(".ICANN").hide();
+            });
+        });
+    </script>
 </body>
 </html>
