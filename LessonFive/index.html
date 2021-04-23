@@ -24,12 +24,13 @@
     3. Add ALT text to your images
     4. Validate your pages before submitting
     -->
-    <main>
-        <!--These will be the things the user clicks on to show/hide the associated information-->
-        <h2 id="IETF">Internet Engineering Task Force</h2>
+    <nav class="topnav" id="myTopnav">
+        <h2 id="IETF" class="active">Internet Engineering Task Force</h2>
         <h2 id="ICANN">Internet Corporation for Assigned Names and Numbers</h2>
         <h2 id="WWWC">World Wide Web Consortium</h2>
-        
+    </nav>
+
+    <main>
         <!--Make sure to add the appropriate class to the information for each organization-->
         <section class="IETF">
             <p>Internet Engineering Task Force</p>
@@ -41,10 +42,22 @@
                 quality, relevant technical documents that influence the way people design, 
                 use, and manage the Internet.
             </p>
+            <a href="https://www.ietf.org/blog/ietf110-hackathon/">IETF 110 Hackathon</a>
+            <p>
+                The IETF recently held a virtual hackathon. 300 people registered and contributed 
+                to 20 different projects. One of the projects "helped encourage awareness of the 
+                performance implications of the various QUIC stacks, and the complexities that 
+                interop adds to performance."
+            </p>
         </section>
 
-        <p class="ICANN">This line is for ICANN</p>
-        <p class="WWWC">This line is for WWWC</p>
+        <section class="ICANN">
+            This line is for ICANN
+        </section>
+
+        <section class="WWWC">
+            This line is for WWWC
+        </section>
     </main>
 </body>
 </html>
